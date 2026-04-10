@@ -1,0 +1,8 @@
+adjust-cell-height = 20%
+cursor-style = block
+font-family = JetBrainsMono NF
+font-size = 20
+shell-integration-features = no-cursor
+theme = Catppuccin Mocha
+working-directory = home
+
