@@ -5,4 +5,3 @@ font-size = 20
 shell-integration-features = no-cursor
 theme = Catppuccin Mocha
 working-directory = home
-
