@@ -15,3 +15,7 @@ vim.opt.softtabstop = 2
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.tabstop = 2
+vim.opt.showmode = false
+vim.opt.showtabline = 0
+vim.opt.showmatch = true
+vim.opt.selection = 'exclusive'

@@ -1,6 +1,6 @@
-vim.pack.add({
+vim.pack.add {
   'https://github.com/neovim/nvim-lspconfig',
-})
+}
 
 vim.lsp.config('lua_ls', {
   settings = {
@@ -12,4 +12,4 @@ vim.lsp.config('lua_ls', {
   },
 })
 
-vim.lsp.enable('lua_ls')
+vim.lsp.enable { 'lua_ls', 'biome' }
