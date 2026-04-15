@@ -12,18 +12,21 @@ vim.keymap.set('n', '<leader>bl', '<Cmd>ls<CR>', { desc = 'List buffers' })
 
 vim.keymap.set('n', '<Esc>h', '<Cmd>noh<CR>', { desc = 'Clear search highlight' })
 
-vim.keymap.set('n', '<leader>f', vim.lsp.buf.format, { desc = 'Format buffer' })
+vim.keymap.set('n', '<leader>cf', vim.lsp.buf.format, { desc = 'Format buffer' })
 
-vim.keymap.set('n', '<C-k>', '<Cmd>m -2<CR>==', { desc = 'Move current line up' })
-vim.keymap.set('n', '<C-j>', '<Cmd>m +1<CR>==', { desc = 'Move current line down' })
-vim.keymap.set('i', '<C-k>', '<Esc><Cmd>m -2<CR>==gi', { desc = 'Move current line up' })
-vim.keymap.set('i', '<C-j>', '<Esc><Cmd>m +1<CR>==gi', { desc = 'Move current line down' })
-vim.keymap.set('x', '<C-k>', ":m '<-2<CR>gv=gv", { silent = true, desc = 'Move selected lines up' })
-vim.keymap.set('x', '<C-j>', ":m '>+1<CR>gv=gv", { silent = true, desc = 'Move selected lines down' })
+vim.keymap.set('n', '<A-k>', '<Cmd>m -2<CR>==', { desc = 'Move current line up' })
+vim.keymap.set('n', '<A-j>', '<Cmd>m +1<CR>==', { desc = 'Move current line down' })
+vim.keymap.set('i', '<A-k>', '<Esc><Cmd>m -2<CR>==gi', { desc = 'Move current line up' })
+vim.keymap.set('i', '<A-j>', '<Esc><Cmd>m +1<CR>==gi', { desc = 'Move current line down' })
+vim.keymap.set('x', '<A-k>', ":m '<-2<CR>gv=gv", { silent = true, desc = 'Move selected lines up' })
+vim.keymap.set('x', '<A-j>', ":m '>+1<CR>gv=gv", { silent = true, desc = 'Move selected lines down' })
 
 vim.keymap.set('n', '<A-d>', '<Cmd>t.<CR>', { desc = 'Duplicate current line' })
 vim.keymap.set('i', '<A-d>', '<Esc><Cmd>t.<CR>gi', { desc = 'Duplicate current line' })
 vim.keymap.set('x', '<A-d>', ":t'><CR>gv", { silent = true, desc = 'Duplicate selected lines' })
+
+vim.keymap.set('n', '<leader>s', 'vip:sort n<CR>', { silent = true, desc = 'Sort paragraph' })
+vim.keymap.set('x', '<leader>s', ':sort n<CR>', { silent = true, desc = 'Sort selection' })
 
 vim.keymap.set('n', '<Down>', '<Nop>')
 vim.keymap.set('n', '<Up>', '<Nop>')

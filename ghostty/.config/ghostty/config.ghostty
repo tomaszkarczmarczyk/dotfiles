@@ -1,6 +1,7 @@
 adjust-cell-height = 20%
+cursor-style-blink = false
 cursor-style = block
-font-family = JetBrainsMono NF
+font-family = JetBrainsMono Nerd Font
 font-size = 20
 macos-option-as-alt = left
 shell-integration-features = no-cursor

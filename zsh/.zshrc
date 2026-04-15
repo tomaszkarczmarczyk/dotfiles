@@ -4,16 +4,16 @@ fi
 
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME='powerlevel10k/powerlevel10k'
 
 zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 7
 zstyle ':omz:*' aliases no
 
-DISABLE_LS_COLORS="true"
-DISABLE_AUTO_TITLE="true"
+DISABLE_LS_COLORS='true'
+DISABLE_AUTO_TITLE='true'
 
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION='true'
 
 plugins=(
   zsh-autosuggestions
@@ -54,13 +54,13 @@ load-nvmrc() {
     local nvmrc_node_version
     nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
 
-    if [ "$nvmrc_node_version" = "N/A" ]; then
+    if [ "$nvmrc_node_version" = 'N/A' ]; then
       nvm install
     elif [ "$nvmrc_node_version" != "$(nvm version)" ]; then
       nvm use
     fi
   elif [ -n "$(PWD=$OLDPWD nvm_find_nvmrc)" ] && [ "$(nvm version)" != "$(nvm version default)" ]; then
-    echo "Reverting to nvm default version"
+    echo 'Reverting to nvm default version'
     nvm use default
   fi
 }
@@ -68,14 +68,22 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+export PNPM_HOME='/Users/tokk/Library/pnpm'
+
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
-export LDFLAGS="-L/usr/local/opt/sqlite/lib"
-export CPPFLAGS="-I/usr/local/opt/sqlite/include"
-export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
+export LDFLAGS='-L/usr/local/opt/sqlite/lib'
+export CPPFLAGS='-I/usr/local/opt/sqlite/include'
+export PKG_CONFIG_PATH='/usr/local/opt/sqlite/lib/pkgconfig'
 
 export HOMEBREW_NO_ENV_HINTS=1
+export MANPAGER='bat -plman'
 
 source <(fzf --zsh)
 
