@@ -1,0 +1,6 @@
+--italic-text=always
+--style=full
+--theme=auto:system
+--theme-light="Catppuccin Latte"
+--theme-dark="Catppuccin Mocha"
+--wrap=never
