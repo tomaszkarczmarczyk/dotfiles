@@ -5,5 +5,5 @@ font-family = JetBrainsMono Nerd Font
 font-size = 20
 macos-option-as-alt = left
 shell-integration-features = no-cursor
-theme = Catppuccin Mocha
+theme = light:Catppuccin Latte,dark:Catppuccin Mocha
 working-directory = home

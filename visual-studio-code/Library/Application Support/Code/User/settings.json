@@ -1,5 +1,8 @@
 {
   "application.shellEnvironmentResolutionTimeout": 60,
+  "css.format.enable": false,
+  "diffEditor.renderSideBySide": false,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeActionsOnSave": {
     "source.biome": "explicit",
     "source.fixAll.biome": "explicit",
@@ -7,24 +10,41 @@
   },
   "editor.cursorBlinking": "expand",
   "editor.cursorStyle": "block",
-  "editor.cursorSurroundingLines": 10,
+  "editor.cursorSurroundingLines": 8,
   "editor.defaultFormatter": "biomejs.biome",
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
   "editor.fontSize": 20,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.lineHeight": 2,
   "editor.minimap.enabled": false,
+  "editor.stickyScroll.maxLineCount": 8,
+  "editor.suggest.showDeprecated": false,
+  "editor.suggest.showStatusBar": true,
+  "editor.suggestFontSize": 16,
+  "editor.suggestLineHeight": 32,
   "editor.tabSize": 2,
-  "files.associations": {
-    "globals.css": "tailwindcss"
-  },
+  "html.format.enable": false,
+  "js/ts.format.enabled": false,
   "json.schemaDownload.trustedDomains": {
     "*": true
   },
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "scm.graph.badges": "all",
+  "search.exclude": {
+    "**/.agents": true
+  },
+  "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.fontSize": 20,
+  "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.hideOnStartup": "always",
+  "terminal.integrated.lineHeight": 1.5,
+  "window.autoDetectColorScheme": true,
   "workbench.iconTheme": "catppuccin-perfect-mocha",
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+  "workbench.preferredLightColorTheme": "Catppuccin Latte",
   "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
   "workbench.tree.indent": 20
 }
