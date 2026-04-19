@@ -1,9 +1,13 @@
-adjust-cell-height = 20%
 cursor-style-blink = false
 cursor-style = block
 font-family = JetBrainsMono Nerd Font
 font-size = 20
 macos-option-as-alt = left
+macos-titlebar-style = tabs
+mouse-hide-while-typing = true
 shell-integration-features = no-cursor
 theme = light:Catppuccin Latte,dark:Catppuccin Mocha
+title = " "
+window-padding-balance = true
+window-padding-x= 20
 working-directory = home

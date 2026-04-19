@@ -1,10 +1,4 @@
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 export ZSH="$HOME/.oh-my-zsh"
-
-ZSH_THEME='powerlevel10k/powerlevel10k'
 
 zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 7
@@ -76,17 +70,19 @@ case ":$PATH:" in
 esac
 
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export LDFLAGS='-L/usr/local/opt/sqlite/lib'
 export CPPFLAGS='-I/usr/local/opt/sqlite/include'
 export PKG_CONFIG_PATH='/usr/local/opt/sqlite/lib/pkgconfig'
 
 export HOMEBREW_NO_ENV_HINTS=1
+
 export MANPAGER='bat -plman'
+
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 
 source <(fzf --zsh)
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
