@@ -1,0 +1,79 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+format = """
+$os\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$package\
+$lua\
+$nodejs\
+$sudo\
+$cmd_duration\
+$line_break\
+$character"""
+
+[character]
+error_symbol = '[󰅂](bold red)'
+success_symbol = '[󰅂](bold green)'
+vimcmd_replace_one_symbol = '[󰅁](bold purple)'
+vimcmd_replace_symbol = '[󰅁](bold purple)'
+vimcmd_symbol = '[󰅁](bold green)'
+vimcmd_visual_symbol = '[󰅁](bold yellow)'
+
+[cmd_duration]
+min_time = 1_000
+
+[directory]
+read_only = '󰌾'
+repo_root_format = '[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) '
+repo_root_style = 'bold cyan'
+truncation_length = 4
+truncation_symbol = "…/"
+use_logical_path = false
+
+[git_branch]
+symbol = '󰘬 '
+
+[git_status]
+ahead = '󰶣'
+behind = '󰶡'
+deleted = '󰗨'
+diverged = '󰹺'
+renamed = '󰄾'
+up_to_date = '󰄬'
+
+[hostname]
+ssh_symbol = '󰌘 '
+
+[line_break]
+disabled = false
+
+[lua]
+symbol = '󰢱 '
+
+[nodejs]
+symbol = '󰎙 '
+
+[os]
+disabled = false
+
+[os.symbols]
+Macos = '󰀵 '
+
+[package]
+display_private = true
+style = 'bold yellow'
+symbol = '󰏓 '
+
+[sudo]
+disabled = false
+symbol = '󰦝 '
+
+[username]
+show_always = true
