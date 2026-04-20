@@ -78,6 +78,7 @@ export PKG_CONFIG_PATH='/usr/local/opt/sqlite/lib/pkgconfig'
 
 export HOMEBREW_NO_ENV_HINTS=1
 
+export LESS='-RS'
 export MANPAGER='bat -plman'
 
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
