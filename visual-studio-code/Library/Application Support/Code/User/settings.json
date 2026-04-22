@@ -1,5 +1,6 @@
 {
   "application.shellEnvironmentResolutionTimeout": 60,
+  "chat.viewSessions.enabled": false,
   "css.format.enable": false,
   "diffEditor.renderSideBySide": false,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
@@ -8,13 +9,12 @@
     "source.fixAll.biome": "explicit",
     "source.organizeImports.biome": "explicit"
   },
-  "editor.cursorBlinking": "expand",
-  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "solid",
   "editor.cursorSurroundingLines": 8,
   "editor.defaultFormatter": "biomejs.biome",
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
-  "editor.fontSize": 20,
+  "editor.fontSize": 16,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
@@ -24,6 +24,7 @@
   "editor.suggestFontSize": 16,
   "editor.suggestLineHeight": 32,
   "editor.tabSize": 2,
+  "explorer.compactFolders": false,
   "html.format.enable": false,
   "js/ts.format.enabled": false,
   "json.schemaDownload.trustedDomains": {
@@ -36,15 +37,17 @@
   "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontLigatures.enabled": true,
-  "terminal.integrated.fontSize": 20,
+  "terminal.integrated.fontSize": 16,
   "terminal.integrated.gpuAcceleration": "off",
   "terminal.integrated.hideOnStartup": "always",
-  "terminal.integrated.lineHeight": 1.5,
+  "vsicons.presets.foldersAllDefaultIcon": true,
   "window.autoDetectColorScheme": true,
-  "workbench.iconTheme": "catppuccin-perfect-mocha",
+  "window.zoomLevel": 1,
+  "workbench.iconTheme": "vscode-icons",
   "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
   "workbench.preferredLightColorTheme": "Catppuccin Latte",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
-  "workbench.tree.indent": 20
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always"
 }
