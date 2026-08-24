@@ -1,3 +1,9 @@
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
+
 export ZSH="$HOME/.oh-my-zsh"
 
 zstyle ':omz:update' mode auto
@@ -26,15 +32,10 @@ setopt INC_APPEND_HISTORY_TIME
 unsetopt SHARE_HISTORY
 unsetopt AUTO_CD 
 
-export LANG=en_GB.UTF-8
-
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='nvim'
-fi
+export LANG=en_US.UTF-8
 
 export NVM_DIR="$HOME/.nvm"
+
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
@@ -79,7 +80,6 @@ export PKG_CONFIG_PATH='/usr/local/opt/sqlite/lib/pkgconfig'
 export HOMEBREW_NO_ENV_HINTS=1
 
 export LESS='-RS'
-export MANPAGER='bat -plman'
 
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 
