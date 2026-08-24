@@ -1,3 +1,5 @@
+background-blur = true
+background-opacity = 0.8
 cursor-style-blink = false
 cursor-style = block
 font-family = JetBrainsMono Nerd Font
