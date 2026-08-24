@@ -1,27 +1,27 @@
 {
   "plugins": {
     "catppuccin": {
-      "rev": "426dbebe06b5c69fd846ceb17b42e12f890aedf1",
+      "rev": "edefef779ab08ce1a4a404713e3012b0d202bd35",
       "src": "https://github.com/catppuccin/nvim"
     },
     "lualine.nvim": {
-      "rev": "f5d2a8570f8b736ddb9bb4be504355bcd6e15ec8",
+      "rev": "221ce6b2d999187044529f49da6554a92f740a96",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "mini.icons": {
-      "rev": "7fdae2443a0e2910015ca39ad74b50524ee682d3",
+      "rev": "98faae31e9be1cc054ae63485e58ceb185efcad0",
       "src": "https://github.com/nvim-mini/mini.icons"
     },
     "nvim-colorizer.lua": {
-      "rev": "5cfe7fffbd01e17b3c1e14af85d5febdef88bd8c",
+      "rev": "72a05f62c52241bc7441c820eb53946f92b2e6a4",
       "src": "https://github.com/catgoose/nvim-colorizer.lua"
     },
     "nvim-lspconfig": {
-      "rev": "c588db330592fa477a70d2fee6ba20a57194bdc3",
+      "rev": "221c43884319e791519f0d6c94a7f2fbcd653278",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-web-devicons": {
-      "rev": "6e76c5e47e957fbf080b1fdac165c66dbd2e7cfb",
+      "rev": "2ae6958df7ced50baac5035cec0c15799eedfbf7",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "which-key.nvim": {
