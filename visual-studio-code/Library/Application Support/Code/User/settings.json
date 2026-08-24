@@ -1,8 +1,10 @@
 {
   "application.shellEnvironmentResolutionTimeout": 60,
   "chat.viewSessions.enabled": false,
+  "claudeCode.preferredLocation": "panel",
   "css.format.enable": false,
   "diffEditor.renderSideBySide": false,
+  "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeActionsOnSave": {
     "source.biome": "explicit",
@@ -15,7 +17,6 @@
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
-  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.stickyScroll.maxLineCount": 8,
@@ -25,14 +26,26 @@
   "editor.suggestLineHeight": 32,
   "editor.tabSize": 2,
   "explorer.compactFolders": false,
+  "github.copilot.enable": {
+    "*": true,
+    "json": false,
+    "markdown": false,
+    "mdx": false,
+    "plaintext": false,
+    "scminput": false,
+    "typescript": true,
+    "typescriptreact": true
+  },
   "html.format.enable": false,
   "js/ts.format.enabled": false,
+  "js/ts.preferences.importModuleSpecifier": "non-relative",
   "json.schemaDownload.trustedDomains": {
     "*": true
   },
   "scm.graph.badges": "all",
   "search.exclude": {
-    "**/.agents": true
+    "**/.agents": true,
+    "**/.claude": true
   },
   "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
